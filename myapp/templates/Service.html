@@ -1,0 +1,248 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="{% static 'header.css' %}">
+    <link rel="stylesheet" href="{% static 'footer.css' %}">
+
+  
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title></title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link href="jquery.parallax.css" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'services.css' %}">
+</head>
+<body>
+    <div id="header-placeholder">
+        {% include "header.html" %}
+    </div>
+    
+    <script>
+        // No need for fetch, just include the header directly
+    </script>
+    
+
+
+
+
+
+
+	<style type="text/css" rel="stylesheet">
+		html,* { font-family: 'Inter'; }
+		h1 { color: #fff; }
+		.list_item:last-child .index .index-divider {
+			border-width: 0;
+		}
+		.list_item .index {
+			text-align: center;
+			color: #ffffff;
+		}
+		.list_item .index .index-text {
+			display: inline-flex;
+			border: 1px solid;
+			width: 52px;
+			height: 52px;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 12px;
+			font-size: 26px;
+			font-weight: bold;
+		}
+		.list_item .index .index-divider {
+			position: absolute;
+			top: 27px;
+			left: calc(50% + 52px);
+			width: calc(100% - 112px);
+			height: 1px;
+			border-top: 1px solid;
+		}
+		@media (max-width: 768px) {
+			.list_item .index {
+				float:left;
+				margin-right: 20px;
+				height: 100%;
+				width: auto;
+			}
+			.list_item .index .index-divider {
+				position: absolute;
+				top: 75px;
+				left: 40px;
+				width: 1px;
+				height: calc(100% - 70px);
+				border-right: 1px solid;
+				border-top: 0;
+			}
+			.list_item {
+				margin-bottom: 30px;
+			}
+			.list_item .card {
+				float: left;
+				width: calc(100% - 80px);
+			}
+		}
+
+        .card-title{
+            font-size:23px;
+            color:orangered;
+        }
+
+        .heading{
+            margin:auto;
+        }
+	</style>
+</head>
+
+
+
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+
+            <h2 class="heading mt-2">Our Services</h2>
+            <p class="para mt-2">
+                At Vindus, we are dedicated to providing top-notch services tailored to meet the needs of our clients. Our range of services encompasses various domains, ensuring comprehensive solutions to address diverse requirements. Below are some of the key services we offer:
+            </p>
+        </div>
+    </div>
+</div>
+<body class="p-0">
+<div id="main" class="container-fluid">
+	
+
+
+	
+
+	<div class="row p-5" data-bg="" data-rate="0.1" data-effect="rand">
+		<h1 class="col-12 text-center mb-5">Our Services</h1>
+		<div class="col-12 col-md p-2 bg-light" style="height:300px;">
+            <img src="{% static 's30.avif' %}" alt="Web Development Image" class="img-fluid">
+        <h3 class="heading">Web Development</h3>
+        <p>Empower your digital presence with our expert web development services. We specialize in crafting responsive, user-friendly websites that elevate your brand and drive engagement. From custom web applications to content management systems, we have the expertise to bring your vision to life.</p>
+        </div>
+		<div class="col-12 col-md p-2 bg-light mx-0 mx-md-5 my-5 my-md-0" style="height:300px;">
+            <img src="{% static 's39.avif' %}" alt="Web Development Image" class="img-fluid">
+           <h3 class="heading"> Mobile App Development</h3>
+           <p> Stay ahead in the mobile-first world with our innovative mobile app development solutions. Whether it's iOS, Android, or cross-platform development, we excel in creating intuitive and feature-rich mobile applications that captivate users and deliver exceptional user experiences.</p>
+        
+        </div>
+		<div class="col-12 col-md p-2 bg-light" style="height:300px;">
+            <img src="{% static 's32.avif' %}" alt="Web Development Image" class="img-fluid">
+        <h3 class="heading">
+            Digital Marketing </h3>
+            <p>Maximize your online reach and ROI with our comprehensive digital marketing strategies. From search engine optimization (SEO) and pay-per-click (PPC) advertising to social media marketing and email campaigns, we employ data-driven tactics to boost your online visibility and drive conversions.</p>
+        </div>
+	</div>
+<br><br><br><br><br><br>
+
+
+    <div class="row p-5" data-bg="" data-rate="0.5" data-effect="slide-up">
+	
+		<div class="col-12 col-md p-2 bg-light" style="height:300px;">
+            <img src="{% static 's57.avif' %}" alt="Web Development Image" class="img-fluid">
+        <h3 class="heading">Graphic Design</h3>
+        <p>Make a lasting impression with stunning visuals crafted by our talented graphic designers. From logo design and branding to print collateral and multimedia presentations, we offer creative solutions that communicate your brand identity and captivate your audience.</p>
+        </div>
+		<div class="col-12 col-md p-2 bg-light mx-0 mx-md-5 my-5 my-md-0" style="height:300px;">
+            <img src="{% static 's36.avif' %}" alt="Web Development Image" class="img-fluid">
+        <h3 class="heading">
+            IT Consulting
+     </h3>
+     <p>Gain strategic insights and expert guidance from our experienced IT consultants. We provide personalized consulting services to help businesses leverage technology effectively, streamline operations, mitigate risks, and achieve their long-term objectives.</p>
+        </div>
+		<div class="col-12 col-md p-2 bg-light" style="height:300px;">
+            <img src="{% static 's38.avif' %}" alt="Web Development Image" class="img-fluid">
+        <h3 class="heading">
+            E-commerce Solutions
+        </h3>
+        <p>Unlock the potential of e-commerce with our end-to-end solutions. Whether you're launching a new online store or optimizing an existing one, we offer scalable e-commerce platforms, secure payment gateways, and robust integrations to drive sales and enhance customer experiences.</p>
+        </div>
+	</div><br><br><br><br><br><br><br><br>
+
+</div>
+
+
+
+<div class="row">
+    {% for image in images %}
+    <div class="col-md-4 mb-3">
+        <div class="card">
+            <img src="{{ image.image.url}}" class="card-img-top" alt="{{ image.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ image.name }}</h5>
+                <p class="card-text">{{ image.description }}</p>
+            </div>
+        </div>
+    </div>
+    {% if forloop.counter|divisibleby:3 and not forloop.last %}
+</div>
+<div class="row">
+    {% endif %}
+    {% endfor %}
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="jquery.parallax.js"></script>
+<script type="text/javascript">
+	$('#main').parallax({mode:1});
+	function custom_show(obj, mode) {
+		obj.children().addClass('animation animation_'+mode);
+	}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer-placeholder">
+    {% include 'footer.html' %}
+</div>
+  
+        
+</body>
+</html>

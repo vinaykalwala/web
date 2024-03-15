@@ -1,0 +1,143 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+            <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Website Title</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{% static 'aboutus.css' %}">
+        <link rel="stylesheet" href="{% static 'footer.css' %}">
+    
+    </head>
+
+    <body>
+
+
+  
+            {% include "header.html" %}
+     
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <img src="{% static  'banner.png'  %}" alt="Banner" class="banner-image">
+        <div class="banner-text">
+            <h1 class="banner-heading">Empower Tech</h1>
+            <p class="banner-subtext">Revolutionizing Software Solutions for a Brighter Tomorrow</p>
+            <button class="banner-button"><strong>Explore Now</strong></button>
+        </div>
+    </div>
+
+    <!-- About Card -->
+    <div class="about-card">
+        <div class="card-body">
+            <h2 class="card-title">Unleash the Future</h2>
+            <p class="card-text">Welcome to Vindus Environment Private Limited, where innovation meets excellence in software solutions.</p>
+            <p class="card-text">Our mission is to transform the digital landscape with cutting-edge technology and unparalleled creativity.</p>
+            <p class="card-text">Discover our core values of passion, integrity, and customer-centricity as we redefine the software industry.</p>
+        </div>
+    </div>
+
+    <!-- Card Container -->
+    <div class="card-container">
+        <div class="card">
+            <img src="{% static 'mission.jpg' %}" alt="Mission">
+            <h3>Mission</h3>
+            <p>We provide ultimately efficient software solutions tailored for all unique individuals and businesses that address all specific challenges</p>
+        </div>
+
+        <div class="card">
+            <img src="{% static  'values.avif'  %}" alt="Values">
+            <h3>Values</h3>
+            <p>We believe in continuous improvement, innovation and determination towards excellence. We always look forward to meeting excellence in outcomes as much as excellence in the procedure.</p>
+        </div>
+
+        <div class="card">
+            <img src="{% static  'vision.jpg'  %}" alt="Vision">
+            <h3>Vision</h3>
+            <p>We, at Vindus foster innovation and believe in creating a well connected and efficient world through software solutions</p>
+        </div>
+    </div>
+
+    <!-- Additional Images -->
+    <div class="additional-images">
+        <img src="{% static 'image1.png'  %}" alt="Image 1" class="image">
+        <img src="{% static 'image2.png'  %}" alt="Image 2" class="image">
+    </div>
+
+    <!-- Container for Extra Information -->
+    <div class="extra-info-container">
+        <div class="extra-info">
+            <h2>Curious Minds Ask</h2>
+        </div>
+
+        <!-- Content Sections -->
+        <div class="content-section" id="description-content">
+            <p>
+                <h4>What Drives Us?</h4>
+                <p class="content-text">Innovation, Passion, and Coffee!</p>
+            </p>
+        </div>
+        <div class="content-section" id="description-content">
+            <!-- Additional Information content goes here -->
+            <p>
+                <h4>How Do We Work?</h4>
+                <p> Magic, Code, and a Dash of Chaos!</p>
+            </p>
+        </div>
+        <div class="content-section" id="description-content">
+
+            <p>
+                <h4>Why Choose Us?</h4>
+                <p> Because Average is Boring!</p>
+            </p>
+        </div>
+        <div class="content-section" id="description-content">
+
+            <p>
+                <h4>Can We Handle It?</h4>
+                <p> We Eat Challenges for Breakfast!</p>
+            </p>
+        </div>
+        <div class="content-section" id="description-content">
+            <p>
+                <h4>What&#x27;s Our Secret?</h4>
+                <p> It&#x27;s Classified, Shh...</p>
+            </p>
+
+        </div>
+
+        <!-- Add more content sections as needed -->
+    </div>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2 class="team-heading">Meet Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="{% static 'vinay.png' %}"  alt="Vinay Kalwala">
+                <h3>Vinay Kalwala</h3>
+                <p>Managing Director</p>
+            </div>
+            <!-- Add more team members as needed -->
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <div class="content">
+        <img src="{% static  'image.png'  %}" alt="Placeholder Image" class="content-image">
+        <h2 class="content-heading">Revolutionizing Software Solutions</h2>
+        {% comment %} <marquee class="content-marquee">
+            <p class="content-text">Join us in shaping the future of technology with our innovative software services.</p>
+        </marquee> {% endcomment %}
+    </div>
+
+         
+                {% include "footer.html" %}
+        
+</body>
+
+</html>

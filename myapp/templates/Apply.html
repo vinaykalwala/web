@@ -1,0 +1,62 @@
+
+{% load static %}
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+  <link rel="stylesheet" href="{% static 'header.css' %}">
+    <link rel="stylesheet" href="{% static 'footer.css' %}">
+    <link rel="stylesheet" href="{% static 'apply.css' %}">
+    <style>
+     
+
+       
+    </style>
+</head>
+<body>
+   
+        {% include "header.html" %}
+    
+
+    <h2>Job Application Form</h2>
+    <div class="container">
+    
+       <div class="col-md-6">
+
+        <form action="{% url 'submit_application' %}" method="POST" enctype="multipart/form-data"style="border: 1px solid #ccc; padding: 20px;">
+            {% csrf_token %}
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+
+            <label for="role">Role Applying For:</label>
+            <select id="role" name="role" required>
+                <option value="" disabled selected>Select Role</option>
+                <option value="front_end">Front End Developer</option>
+                <option value="full_stack">Full Stack Developer</option>
+                <option value="content_moderator">Content Moderator</option>
+            </select>
+
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <input type="submit" value="Submit Application">
+        </form>
+    </div>
+    </div>
+
+    {% include "footer.html" %}
+</body>
+</html>

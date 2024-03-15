@@ -1,0 +1,372 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('images/s00.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire background with the image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fix the background image so it doesn't scroll with the content */
+}
+.navbar.scrolled {
+    background-color: #f4f0f0; /* Change the background color to your desired color */
+    transition: background-color 0.3s; 
+    color:black;
+    height:90px;
+}
+.navbar {
+    transition: height 0.3s; /* Smooth transition effect */
+}
+.navbar{
+    background-color: transparent; /* Set navbar background color to transparent */
+    transition: background-color 0.3s;
+}
+/* Center the content in the header */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  
+}
+.navbar-nav .nav-link {
+    font-size: 18px; 
+    color:#f7f4f4;
+  
+}
+.navbar.scrolled .navbar-nav .nav-link {
+    color: #0a0a0a; /* Change the color as needed */
+    /* Add more styles if necessary */
+}
+/* Style the logo */
+.logo {
+    font-size: 24px;
+}
+
+/* Style the navigation */
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    color: #141313;
+    text-decoration: none;
+     padding:30px;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.nav-item {
+    margin-right: 20px; /* Adjust the right margin to add space between links */
+}
+
+
+/* Your existing styles for other sections */
+/* Adjust these styles according to your existing CSS */
+.hero-section {
+    padding: 100px 0;
+ 
+}
+
+/* Add more CSS as per your existing styling */
+.hero-section {
+    background-color: #030a59; /* Light grey background color */
+    padding: 100px 0; /* Adjust padding as needed */
+    color:#fff;
+    z-index: 0;
+    height:500px;
+}
+
+.p-xl {
+    font-size: 20px; 
+    margin-top:50px;
+}
+
+.heading {
+    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: 700; /* Adjust the font weight as needed */
+    color: #d97a0d; /* Adjust the color as needed */
+    margin:auto;
+    
+   
+
+}
+.nav-link:hover {
+    color: #e7b70a; /* Change the color on hover to your desired color */
+    /* Add more styles as needed */
+}
+
+
+
+.font{
+    font-size: 23px;
+    color:rgb(195, 75, 23);
+}
+
+.range{
+    font-size: 35px;
+    color:rgb(195, 75, 23);
+    margin-top: 200px;;
+}
+
+
+
+    
+html,* { font-family: 'Inter'; }
+h1 { color: #fff; }
+.list_item:last-child .index .index-divider {
+    border-width: 0;
+}
+.list_item .index {
+    text-align: center;
+    color: #ffffff;
+}
+.list_item .index .index-text {
+    display: inline-flex;
+    border: 1px solid;
+    width: 52px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.list_item .index .index-divider {
+    position: absolute;
+    top: 27px;
+    left: calc(50% + 52px);
+    width: calc(100% - 112px);
+    height: 1px;
+    border-top: 1px solid;
+}
+@media (max-width: 768px) {
+    .list_item .index {
+        float:left;
+        margin-right: 20px;
+        height: 100%;
+        width: auto;
+    }
+    .list_item .index .index-divider {
+        position: absolute;
+        top: 75px;
+        left: 40px;
+        width: 1px;
+        height: calc(100% - 70px);
+        border-right: 1px solid;
+        border-top: 0;
+    }
+    .list_item {
+        margin-bottom: 30px;
+    }
+    .list_item .card {
+        float: left;
+        width: calc(100% - 80px);
+    }
+}
+
+
+
+  .card img {
+      max-height: 100%;
+  }
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+  }
+
+  .para {
+    color:red;
+    font-size: 35px;
+}
+
+.navbar-collapse{
+    float:right;
+}
+
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+
+
+/* Container styles */
+.container-fluid-cards {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+
+.fa-instagram{
+    color:red;
+}
+.fa-youtube{
+    color:red;
+}
+.fa-whatsapp{
+    color:green
+}
+
+.fa-facebook{
+    color:rgb(51, 15, 211)
+}
+
+.fa-twitter{
+    color: #3c3c3c;
+}
+
+
+
+.socialfooter a{
+    color: #000;
+    font-size: 25px;
+}
+.socialfooter a:hover{
+    opacity: 0.5;
+}
+@media (max-width: 568px) {
+ .footer{
+    margin-bottom: 400px;
+ }
+}
+
+.custom-background {
+    background-image: url('im.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Any other CSS properties you want to apply */
+}
+
+.col-xs-3:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.col-xs-3:hover .fbox-txt {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+.imgfluid{
+    margin-top:100px;
+ 
+}
+
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+h3{
+    color:#ca580c
+}
+
+
+
+.parallax {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+.animation {
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+@keyframes slide-up {
+    from {opacity:0; top:100px;}
+    to {opacity:1; top:0;}
+}
+.animation_slide-up {
+    animation-name: slide-up;
+}
+@keyframes slide-down {
+    from {opacity:0; bottom:100px;}
+    to {opacity:1; bottom:0;}
+}
+.animation_slide-down {
+    animation-name: slide-down;
+}
+@keyframes slide-left {
+    from {opacity:0; left:100px;}
+    to {opacity:1; left:0;}
+}
+.animation_slide-left {
+    animation-name: slide-left;
+}
+@keyframes slide-right {
+    from {opacity:0; right:100px;}
+    to {opacity:1; right:0;}
+}
+.animation_slide-right {
+    animation-name: slide-right;
+}
+@keyframes flip-x {
+    from {opacity:0;transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -180deg);}
+    to {opacity:1;transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);}
+}
+.animation_flip-x {
+    backface-visibility: visible;
+    animation-name: flip-x;
+}
+@keyframes flip-y {
+    from {opacity: 0;transform: perspective(400px) rotate3d(1, 0, 0, 90deg);}
+    to {opacity:1;transform: perspective(400px);}
+}
+.animation_flip-y {
+    backface-visibility: visible !important;
+    animation-name: flip-y;
+}
+@keyframes zoom {
+    from {opacity: 0;transform: scale3d(0.3, 0.3, 0.3);}
+    to {opacity: 1;}
+}
+.animation_zoom {
+    animation-name: zoom;
+}
+
+.navbar-nav .nav-link {
+    /* Your existing styles */
+    text-decoration: none !important; /* Remove underline */
+}
+
+/* Additional styles when scrolled */
+nav.scrolled .navbar-nav .nav-link {
+    text-decoration: none !important; /* Remove underline */
+}

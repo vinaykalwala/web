@@ -1,0 +1,96 @@
+h2{
+ 
+        font-family: 'Arial', sans-serif; /* Choose a font family */
+        font-size: 28px; /* Adjust the font size */
+        font-weight: bold; /* Make the font bold */
+        color: #f21010; /* Choose a color for the text */
+        margin-bottom: 20px; /* Add some bottom margin for spacing */
+    
+    
+}
+
+.accordion-btn {
+   
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+  width:900px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content {
+    padding: 18px;
+    width: 900px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+}
+
+.accordion-btn.active, .accordion-btn:hover {
+    background-color: #ddd;
+}
+
+.accordion-btn.active + .accordion-content {
+    display: block;
+}
+
+/* Button styles */
+.apply-button {
+    position: relative;
+    padding: 10px 20px;
+    color: #160303;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #160303;
+    float: right;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Sliding effect for button */
+.apply-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width:900px;
+    height: 100%;
+    background-color: #3e5b81;
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+/* Hover effect */
+.apply-button:hover::before {
+    left: 0;
+}
+
+/* Text color on hover */
+.apply-button:hover {
+    background-color: #0056b3;
+    border: none;
+    font-weight: 300;
+    color: #fff;
+}
+
+.job-title {
+    color: orangered;
+    font-size: 25px;
+}
+
+.job-data {
+    color: blue;
+}
+
+.jobdescription {
+    font-size: 20px;
+}

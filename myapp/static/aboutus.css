@@ -1,0 +1,201 @@
+
+/* Top Banner */
+
+.top-banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner-subtext {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.banner-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* About Card */
+
+.about-card {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.card-body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+/* Card Container */
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+/* Additional Images */
+
+.additional-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.image {
+    max-width: 45%;
+    border-radius: 10px;
+}
+
+
+/* Extra Information */
+
+.extra-info-container {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.extra-info {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.content-text {
+    font-size: 1.2rem;
+}
+
+
+/* Team Section */
+
+.team-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-heading {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    margin: 0 20px;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.2rem;
+}
+
+
+/* Content Section */
+
+.content {
+    padding: 50px 0;
+    text-align: center;
+    background-color: aqua;
+}
+
+.content-image {
+    max-width: 50%;
+    margin-bottom: 30px;
+}
+
+.content-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.content-marquee {
+    font-size: 1.2rem;
+}
+
+

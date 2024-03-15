@@ -1,0 +1,165 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>
+         Contact Us
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    
+        <link rel="stylesheet" href="{% static 'footer.css' %}">
+        <link rel="stylesheet" href="{% static 'contactus.css' %}">
+    
+
+    
+    </head>
+    <body>
+        <div id="header-placeholder">
+            {% include "header.html" %}
+        </div>
+  
+     <!--add a contact us header with background image with text-->
+<!-- Contact Us Header Section -->
+<div class="contact-us-header" style="background-image: url('images/contactback.jpg');">
+    <div class="overlay"></div> <!-- Optional overlay for a better look -->
+    <div class="header-content">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Get in touch with us for any inquiries or questions.</p>
+    </div>
+</div>
+
+
+
+
+
+      <!--Form Section-->
+     <div class="container belowcard">
+    <div class="title">Talk to Our Concern Department Team</div>
+    <div class="row">
+        <div class="col-lg-7 formsec">
+            <div class="content">
+                <form id="contact-form" action="{% url 'contactus' %}" method="POST" enctype="multipart/form-data" onsubmit="submitForm(); return false;">
+                    {% csrf_token %}
+    <div class="user-details">
+       
+        <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your Last name" name="name"  id="name"required>
+            <div class="error-message" id="last-name-error"></div>
+        </div>
+        <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your Phone Number" name="mobile"  id="mobile"required>
+            <div class="error-message" id="phone-error"></div>
+        </div>
+        <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" id="email" required>
+            <div class="error-message" id="email-error"></div>
+        </div>
+        <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your address" name="address" id='address'>
+            <div class="error-message" id="address-error"></div>
+        </div>
+        
+        <div class="input-box">
+            <span class="details">Message</span>
+            <textarea cols="40" rows="5" placeholder="How can we help you" name="message" id="message" required></textarea>
+            <div class="error-message" id="message-error"></div>
+        </div>
+    </div>
+    <div class="button">
+        <input type="submit" id="submit" value="Submit" name="submit" class="btn btn-info">
+    </div>
+</form>
+
+            </div>
+        </div>
+
+        <div class="col-lg-5 formimg">
+          <iframe frameborder="0" style="border:0" width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key&#x3D;AIzaSyCt1265A4qvZy9HKUeA8J15AOC4SrCyZe4&amp;q&#x3D;Hyderabad;Dilshuknagar;vindus environment private limited%20India" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</div>
+
+
+    
+<!-- Office Address Section -->
+<div id="office-address" class="container myaddress">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Our Office Address</h2>
+      <address>
+        <strong>VINDUS</strong><br>
+        Shantinagar, Dilshuknagar<br>
+        Hyderabad, Telangana, 500060<br>
+        INDIA
+      </address>
+    </div>
+    <div class="col-md-6">
+          <img src="images/rsz_unlogo-removebg-preview.png" alt="">
+    </div>
+  </div>
+</div>
+
+     
+<div id="footer-placeholder">
+    {% include 'footer.html' %}
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add event listener to the form submission
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+
+            // Call the function to handle form submission
+            submitForm();
+        });
+    });
+
+    // Function to handle form submission
+    function submitForm() {
+        // Assuming your form has the id 'contact-form'
+        var form = document.getElementById('contact-form');
+        var formData = new FormData(form);
+
+        // AJAX request to submit form data
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Show SweetAlert box upon successful form submission
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Your form has been submitted successfully.',
+                    confirmButtonText: 'OK'
+                });
+                // Optional: Reset form fields after successful submission
+                form.reset();
+            } else {
+                // Handle other response scenarios if needed
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+</script>
+
+    </body>
+</html>

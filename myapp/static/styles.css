@@ -1,0 +1,260 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('images/s00.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire background with the image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fix the background image so it doesn't scroll with the content */
+}
+.navbar.scrolled {
+    background-color: #f4f0f0; /* Change the background color to your desired color */
+    transition: background-color 0.3s; 
+    color:black;
+    height:90px;
+}
+.navbar {
+    transition: height 0.3s;
+    width:100%;
+}
+.navbar{
+    background-color: transparent; /* Set navbar background color to transparent */
+    transition: background-color 0.3s;
+}
+/* Center the content in the header */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  
+}
+.navbar-nav .nav-link {
+    font-size: 18px; 
+    color:#f7f4f4;
+  
+}
+.navbar.scrolled .navbar-nav .nav-link {
+    color: #0a0a0a; /* Change the color as needed */
+    /* Add more styles if necessary */
+}
+/* Style the logo */
+.logo {
+    font-size: 24px;
+}
+
+
+
+/* Your existing styles for other sections */
+/* Adjust these styles according to your existing CSS */
+.hero-section {
+    padding: 100px 0;
+ 
+}
+
+/* Add more CSS as per your existing styling */
+.hero-section {
+    background-color: #030a59; /* Light grey background color */
+    padding: 100px 0; /* Adjust padding as needed */
+    color:#fff;
+    z-index: 0;
+    height:500px;
+}
+
+.p-xl {
+    font-size: 20px; 
+    margin-top:50px;
+}
+
+.nav-link:hover {
+    color: #e7b70a; /* Change the color on hover to your desired color */
+    /* Add more styles as needed */
+}
+
+
+
+.font{
+    font-size: 23px;
+    color:rgb(195, 75, 23);
+}
+
+.range{
+    font-size: 35px;
+    color:rgb(195, 75, 23);
+  
+}
+
+
+
+
+/* Apply animation to the text */
+.carousel-caption h1 {
+    animation: wave 3s infinite;
+    color:#ec9f24;
+
+}
+
+.carousel-caption{
+    margin-bottom: 200px;
+    margin-left:-200px;
+    width:400px;
+    color:#ca580c
+}
+
+
+
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+
+
+/* Container styles */
+.container-fluid-cards {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+
+.fa-instagram{
+    color:red;
+}
+.fa-youtube{
+    color:red;
+}
+.fa-whatsapp{
+    color:green
+}
+
+.fa-facebook{
+    color:rgb(51, 15, 211)
+}
+
+.fa-twitter{
+    color: #3c3c3c;
+}
+
+
+
+.socialfooter a{
+    color: #000;
+    font-size: 25px;
+}
+.socialfooter a:hover{
+    opacity: 0.5;
+}
+@media (max-width: 568px) {
+ .footer{
+    margin-bottom: 400px;
+ }
+ 
+.navbar-toggler{
+    color:#fff;
+}
+
+}
+
+.custom-background {
+    background-image: url('im.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Any other CSS properties you want to apply */
+}
+
+
+
+
+h3{
+    color:#ca580c
+}
+.navbar-toggler {
+    border: 1px solid transparent; /* Add border to the toggle button */
+    border-radius: 4px; /* Add border radius to round the corners */
+    padding: 0.25rem 0.5rem; /* Adjust padding as needed */
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.5; /* Adjust line height */
+    color: #fff; /* Set text color */
+    background-color: transparent; /* Set background color */
+    border-color: transparent; /* Set border color */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+/* Customize the icon inside the toggle button */
+.navbar-toggler-icon {
+    background-image: url('path/to/your-icon.svg'); /* Replace 'path/to/your-icon.svg' with the actual path to your icon */
+    width: 24px; /* Set width of the icon */
+    height: 24px; /* Set height of the icon */
+  
+}
+
+/* Add hover effect to the toggle button */
+.navbar-toggler:hover {
+    color: #ccc;
+    color:#fff;
+}
+
+.achieve{
+    margin: auto;
+    color:#be6b0d
+}
+
+.range{
+    text-align: center;
+}
+.text-box h5 {
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: 10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background-color: black;
+    background: url(bg2.jpeg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.text-box {
+    color: aqua;
+    position: absolute;
+    bottom: 9%;
+}
+
+.accordion-button {
+    width: 100%!important ;/* Set the width to 100% to prevent width change */
+}
+.accordion-button:not(.collapsed) {
+    width: 100%; /* Set the width to 100% for the expanded state */
+}

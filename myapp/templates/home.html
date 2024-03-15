@@ -1,0 +1,353 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vindus PYT LTD</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/29485d9027.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="{% static 'footer.css' %}">
+      <link href="jquery.parallax.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <link rel="stylesheet" href="{% static 'styles.css' %}">
+      <link rel="stylesheet" href="{% static 'aos.css' %}">
+      <link rel="stylesheet" href="{% static 'jquery.css' %}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+     <style>
+       
+            .text-box h5 {
+                font-size:60px;
+                margin-bottom:200px;
+               margin-auto;
+               line-height: 1;
+                color: transparent;
+                -webkit-text-stroke: 1px #fff;
+                background-color: black;
+            background-image: url('{% static 'bg2.jpeg' %}');
+                -webkit-background-clip: text;
+                background-position: 0 0;
+                animation: back 20s linear infinite;
+            }
+            
+            @keyframes back {
+                100% {
+                    background-position: 2000px 0;
+                }
+            }
+            
+            .text-box {
+                color: aqua;
+                position: absolute;
+                bottom: 9%;
+                width:300px;
+               
+            }
+       
+     </style>
+   
+</head>
+<body>
+    {% include "header.html" %}
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+    </script>
+    
+ 
+<script>
+    // Initialize carousel
+    $(document).ready(function(){
+        $('.carousel').carousel();
+    });
+</script>
+
+
+<div class="container-fluid">
+    
+</div>
+
+
+
+
+
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="carousel-img-container">
+                <img class="d-block w-100" src="{% static 's000.jpg' %}">
+                <div class="text-box">
+                    <h5>Empowering Innovation</h5>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Additional carousel items go here -->
+    </div>
+
+
+
+    <script>
+        // JavaScript to animate text word by word
+        document.addEventListener('DOMContentLoaded', function() {
+            const caption = document.querySelector('.carousel-caption h1');
+            const words = caption.textContent.trim().split(' ');
+    
+            let index = 0;
+    
+            function animateText() {
+                if (index < words.length) {
+                    caption.textContent += ' ' + words[index];
+                    index++;
+                    setTimeout(animateText, 500); // Adjust the delay between words
+                } else {
+                    setTimeout(function() {
+                        caption.classList.add('fadeOut');
+                    }, 2000); // Adjust the delay before fading out
+                }
+            }
+    
+            animateText();
+        });
+    </script>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div><br>
+
+
+
+    <!-- HERO-1 -->
+<div class="container-fluid" style="background-color:#030a59;color:#fff">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <!-- HERO TEXT -->
+            <div class="col-md-6">
+                <div class="hero-1-txt color--white wow fadeInRight">
+                    <!-- Title -->
+                    <h1 class="s-70 w-900">Transforming visions into captivating experiences.</h1>
+                    <!-- Text -->
+                    <p class="p-xl">Unlock the power of content to grow your audience and engage your customers. We provide innovative solutions to help you create compelling content and reach your business goals.</p>
+                    <!-- Button -->
+                    <a href="#features" class="btn r-04 btn--theme hover--tra-white">Learn More</a>
+                </div>
+            </div> <!-- END HERO TEXT -->
+            <!-- HERO IMAGE -->
+            <div class="col-md-6">
+                <div class="hero-1-img wow fadeInLeft">
+                    
+                    <img src="{% static 'v1.jpg' %}">
+                </div>
+            </div>
+        </div> <!-- End row -->
+    </div> <!-- End container -->
+</div> <!-- END HERO-1 -->
+
+  
+            <h1 class="range">Achieve more with better workflows</h1>
+    
+
+
+
+<div id="main" class="container-fluid">
+	<div class="row p-5" data-bg="https://source.unsplash.com/hh_7gviHosw/1920x1280" data-rate="0.2" data-effect="zoom" data-func="custom_show">
+	
+		<div class="col-12 col-md list_item">
+			<div class="index">
+				<div class="index-text"></div>
+				<div class="index-divider"></div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<div class="card-title"><h3>Content Marketing</h3>
+                      </div>
+					<div class="card-body p-0">
+                        Porta semper lacus and cursus feugiat at primis ultrice a ligula auctor
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md list_item">
+			<div class="index">
+				<div class="index-text"></div>
+				<div class="index-divider"></div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<div class="card-title"><h3>Business Analytics</h3></div>
+					<div class="card-body p-0">
+						Porta semper lacus and cursus feugiat at primis ultrice a ligula auctor
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md list_item">
+			<div class="index">
+				<div class="index-text"></div>
+				<div class="index-divider"></div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<div class="card-title"><h3>Video Marketing</h3></div>
+					<div class="card-body p-0">
+						Porta semper lacus and cursus feugiat at primis ultrice a ligula auctor
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row p-5 bg-info" data-func="show_2">
+		<h1 class="col-12 text-center mb-5">Smart solutions, real-time results</h1>
+		<div class="col-12 col-md list_item">
+			<div class="index">
+				<div class="index-text">1</div>
+				<div class="index-divider"></div>
+			</div>
+            <div class="card">
+                <img class="card-img-top"src="{% static 'c5.jpg' %}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: red;">Search Engine Optimizations</h5>
+  
+                  <p class="card-text">VIndus specializes in Search Engine Optimization or SEO required for websites and blogs. Which can help you get recognized on major search engines</p>
+                </div>
+              </div>
+		</div>
+		<div class="col-12 col-md list_item">
+			<div class="index">
+				<div class="index-text"></div>
+				<div class="index-divider"></div>
+			</div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 'c3.jpeg' %}"" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: red;">Competitor Analysis</h5>
+  
+                  <p class="card-text">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                </div>
+              </div>
+		</div>
+		<div class="col-12 col-md list_item">
+			<div class="index">
+				<div class="index-text"></div>
+				<div class="index-divider"></div>
+			</div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 'c2.avif' %}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: red;">Data Analytics</h5>
+                  <p class="card-text">We can help you analyze the data gathered from various sources so you can manipulate your strategies accordingly and know your areas of strength and weakness.</p>
+                </div>
+              </div>
+  
+		</div>
+		<div class="col-12 col-md list_item">
+			<div class="index">
+				<div class="index-text"></div>
+				<div class="index-divider"></div>
+			</div>
+            <div class="card">
+                <img class="card-img-top" src="{% static 's30.avif' %}" alt="Card image cap">
+               
+                <div class="card-body">
+                  <h5 class="card-title" style="color: red;">Online Reputation Management</h5>
+                  <p class="card-text">The online reputation is a major component in the overall reputation of any business. VIndus can help you manage your online reputation and get you the best possible reviews.</p>
+                </div>
+              </div>
+  
+		</div>
+	</div>
+
+
+	<div class="row p-5" data-bg="https://source.unsplash.com/dJqAoi8JQ-Q/1920x1280" data-rate="0.6" data-effect="slide-left">
+		<h1 class="col-12 text-center mb-5"></h1>
+		<div class="col-12 col-md p-2 bg-light" style="height:300px;">
+            <h3>Blog Section</h3>
+            <p>"Stay informed and inspired with our blog. Explore the latest trends, tips, and best 
+                practices for workflow management, productivity, and team collaboration. Whether you're
+                 a seasoned pro or just getting started, our blog has something for everyone."</p>
+        </div>
+		<div class="col-12 col-md p-2 bg-light mx-0 mx-md-5 my-5 my-md-0" style="height:300px;">
+        <h3>Case Studies</h3>
+        <p>"See how businesses like yours are leveraging Vindus to achieve their goals.
+             Our case studies showcase real-world examples of how our software has helped companies improve 
+            efficiency, boost collaboration, and drive success."</p>
+        </div>
+		<div class="col-12 col-md p-2 bg-light" style="height:300px;">
+        <h3>Customer Support </h3>
+        "Need help? Our dedicated customer support team is here for you. Whether you have a question, 
+        need assistance, or just want to provide feedback, we're always happy to hear from you.
+         Contact us via phone, email, or live chat."</div>
+	</div>
+
+
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="jquery.parallax.js"></script>
+<script type="text/javascript">
+	$('#main').parallax({mode:1});
+	function custom_show(obj, mode) {
+		obj.children().addClass('animation animation_'+mode);
+	}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<br><br>
+
+                  
+
+{% include "footer.html" %}
+
+      
+          </body>
+          </html>
+                 
+    
+
+

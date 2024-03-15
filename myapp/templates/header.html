@@ -1,0 +1,95 @@
+
+
+
+    {% load static %}
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Header</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS styles */
+        .navbar {
+            background-color: #14213D;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar-nav {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav .nav-item {
+            margin-left: 20px; /* Adjust margin as needed */
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .navbar-nav .nav-link:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1px; /* Adjust the distance below the item */
+            width: 100%;
+            border-bottom:2px solid rgb(177, 224, 23); /* Underline style */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 991.98px) {
+            .navbar-nav {
+                margin-top: 10px;
+                margin-left: auto;
+            }
+            .navbar-nav .nav-item {
+                margin-left: 0;
+                margin-right: 20px; /* Adjust margin as needed */
+            }
+        }
+    </style>
+</head>
+<body>
+   
+        <nav class="navbar navbar-expand-lg  navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'logo2.jpg' %}" alt="Your Logo"> <!-- Replace logo.jpg with the actual path to your logo image -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color:#fff">
+                <span class="navbar-toggler-icon" style="color:#fff"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'aboutus' %}">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'services' %}">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'career_page' %}">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="{% url 'contactus' %}">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br><br><br><br>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

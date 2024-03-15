@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header{
+  
+    color: rgb(206, 90, 19);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.terms h2, .terms h3 {
+    color: #004680;
+}
+
+.terms p {
+    margin-bottom: 1rem;
+}
+
+.terms{
+    padding-left:50px;
+}
+main{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px;
+}

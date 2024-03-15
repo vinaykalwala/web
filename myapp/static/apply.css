@@ -1,0 +1,187 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #dddd;
+    padding: 20px;
+    margin: 0;
+}
+
+.form-container {
+    background-color:#63a0e1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    
+}
+
+.heading:hover {
+    color: #9381ff /* Change the text color on hover */
+    
+    
+}
+h2:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Adjust the thickness as needed */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+input[type="file"]:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 50%; /* Changed */
+    padding: 12px 15px;
+    background-color: #5aa9e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+
+
+.btn{
+    margin-left:120px;
+}
+
+ /* CSS for Bootstrap Modal Example */
+.modal-header {
+background-color: #f8f9fa;
+border-bottom: 1px solid #dee2e6;
+}
+
+
+.modal-body {
+color: green;
+font-size: larger;
+}
+
+.modal-footer {
+background-color: #f8f9fa;
+border-top: 1px solid #dee2e6;
+}
+
+.modal-content {
+width: 250px; /* Set width */
+height: 60px; /* Set height */
+
+}
+
+@media (max-width: 576px) {
+.modal-dialog {
+max-width: 90%;
+margin: 1.75rem auto;
+}
+}
+
+@media (min-width: 576px) {
+.modal-dialog {
+max-width: 500px;
+margin: 2.75rem auto;
+}
+}
+
+.modal-footer .btn-secondary {
+background-color: #22639c; /* Background color for the Close button */
+color: #fff; /* Text color for the Close button */
+}
+
+.btn-secondary{
+color: #fff;
+background-color: chocolate;
+border-color: #6c757d;
+}
+
+/* Custom CSS styles */
+        .navbar {
+            background-color: #14213D;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar-nav {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav .nav-item {
+            margin-left: 20px; /* Adjust margin as needed */
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .navbar-nav .nav-link:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1px; /* Adjust the distance below the item */
+            width: 100%;
+            border-bottom:2px solid rgb(177, 224, 23); /* Underline style */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 991.98px) {
+            .navbar-nav {
+                margin-top: 10px;
+                margin-left: auto;
+            }
+            .navbar-nav .nav-item {
+                margin-left: 0;
+                margin-right: 20px; /* Adjust margin as needed */
+            }
+        }
